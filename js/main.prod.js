@@ -15,7 +15,9 @@ var initMatrix = function initMatrix() {
   ctx.fillStyle = "#00FF00";
   ctx.font = '12pt';
   position.map(function (y, index) {
-    var text = String.fromCharCode(1e1 + Math.random() * 30);
+    var text = 'Te amo♥');
+
+    //var text = String.fromCharCode(1e1 + Math.random() * 30);
     var x = index * 15 + 15;
     canvas.getContext('2d').fillText(text, x, y);
     y > 100 + Math.random() * 1e5 ? position[index] = 0 : position[index] = y + 15;
